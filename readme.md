@@ -5,7 +5,6 @@ Ez Publish 5.x Database Session Handler
 
 1. Add the bundle to your `src` directory
 2. Add the following to `config.yml`
-
 ````
 framework:
     session:
@@ -36,7 +35,7 @@ services:
 ````
 3. The timeout will be read from site.ini [Sessions] SessionTimout=100
 4. Add the following cronjob to run every 1/2 minutes
-
 ````
 * * * * * cd /var/www/www.mysite.com && php ezpublish/console session:garbage_collector >/dev/null
 ````
+5. Test the timeout by running `php ezpublish/console session:garbage_collector` manually from the console
