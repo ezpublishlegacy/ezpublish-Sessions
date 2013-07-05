@@ -1,0 +1,7 @@
+parameters:
+#    acme_sessions.example.class: ACME\SessionsBundle\Example
+
+services:
+#    acme_sessions.example:
+#        class: %acme_sessions.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
